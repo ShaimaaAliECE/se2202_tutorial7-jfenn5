@@ -1,0 +1,24 @@
+{
+  "tests": [
+    {
+      "name": "Task1_Test",
+      "setup": "",
+      "run": "node Task1.js",
+      "input": "",
+      "output": "13074.539999999999",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "Task2_Test",
+      "setup": "",
+      "run": "node Task2.js",
+      "input": "",
+      "output": "77.07788269017254",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    }
+  ]
+}
