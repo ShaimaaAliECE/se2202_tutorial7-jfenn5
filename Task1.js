@@ -15,7 +15,7 @@ let distancesInInches_travel = distancesInMeters_travel.map(function(distanceInM
 });
 
 // use the Array.prototype.map to transform the values in the 'back' array to negatives
-let distancesInInches_back = distancesInInches_back.map(function(distanceInInches){
+distancesInInches_back = distancesInInches_back.map(function(distanceInInches){
   return distanceInInches * -1;
 });
 
