@@ -15,16 +15,16 @@ let distancesInInches_travel = distancesInMeters_travel.map(function(distanceInM
 });
 
 // use the Array.prototype.map to transform the values in the 'back' array to negatives
-distancesInInches_back = distancesInInches_back.map(function(distanceInInches){
+let distancesInInches_back_neg = distancesInInches_back.map(function(distanceInInches){
   return distanceInInches * -1;
 });
 
 // use the Array.prototype.concat method to merge the two arrays into one
-let distancesInInches = distancesInInches_travel.concat(distancesInInches_back);
+let distancesInInches = distancesInInches_travel.concat(distancesInInches_back_neg);
 
 // use the Array.prototype.reduce method to find the total distance travled in addition to the offset
 // store the calculated distance in the variable 'total_inches_travled'
-let total_inches_travled  = distancesInInches.reduce(function(total, distanceInInches){
+let total_inches_travled  = distancesInInches.reduce(function(total, distanceInInches) {
   return total + distanceInInches;
 }, offset);
 
